@@ -5,7 +5,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\CategoryController;
 
 Route::group([
-    'prefix' => '{lang}',
+        'prefix' => '{lang}/admin',
     'where' => ['lang' => 'en|ar'],
     'middleware' => ['setLocale'],
 ], function () {
