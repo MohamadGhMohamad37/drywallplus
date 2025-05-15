@@ -23,6 +23,7 @@
         <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- App Css-->
         <link href="{{ asset('assets/css/app.min.css') }}" rel="stylesheet" type="text/css" />
+        @yield('header')
 
     </head>
 
@@ -770,7 +771,7 @@
 
         <!-- Datatable init js -->
         <script src="{{ asset('assets/js/pages/datatables.init.js') }}"></script>
-
+        @yield('script')
         <script src="{{ asset('assets/js/app.js') }}"></script>
 
     </body>

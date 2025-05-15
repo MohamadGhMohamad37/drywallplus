@@ -10,6 +10,6 @@ Route::group([
     'middleware' => ['setLocale'],
 ], function () {
 Route::get('/dashboard',[DashboardController::class,'index'])->name('dashboard.admin');
-Route::resource('categories', CategoryController::class);
+Route::resource('/categories', CategoryController::class);
 
 });
